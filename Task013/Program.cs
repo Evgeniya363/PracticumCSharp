@@ -10,9 +10,8 @@ while(numAbs>=1000)
 {
   numAbs=numAbs/10;
 }
-Console.WriteLine(numAbs);
 
 if (numAbs <100)
-  Console.WriteLine("Неверный ввод");
+  Console.WriteLine("Третьей цифры нет");
 else
   Console.WriteLine($"Третья цифра: {numAbs % 10}");
