@@ -6,12 +6,14 @@ Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 int numAbs = Math.Abs(num);
-while(numAbs>=1000)
-{
-  numAbs=numAbs/10;
-}
 
 if (numAbs <100)
   Console.WriteLine("Третьей цифры нет");
 else
+{
+  while (numAbs >= 1000)
+  {
+    numAbs = numAbs / 10;
+  }
   Console.WriteLine($"Третья цифра: {numAbs % 10}");
+}
