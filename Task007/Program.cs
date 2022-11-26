@@ -7,7 +7,7 @@ if (num/100 == 0)
   Console.Write("Третья слева цифра отсутствует");
 else
 {
-  while( num >= 1000 || num <= -1000)
+  while( Math.Abs(num) >= 1000)
   {
     num = num / 10;
   }
