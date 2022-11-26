@@ -9,4 +9,4 @@ int numAbs = Math.Abs(num);
 if (numAbs<100 || numAbs>1000)
   Console.WriteLine("Неверный ввод");  
 else
-  Console.WriteLine($"Вторая цифра: {num%100/10}");
+  Console.WriteLine($"Вторая цифра: {numAbs%100/10}");
