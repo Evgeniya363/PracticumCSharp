@@ -4,15 +4,15 @@
 //14212 -> нет, 12821 -> да, 23432 -> да
 
 // Решение для 1 и более значных целых чисел 
-// отрицательные числа палиндромами не являются, результат вычислений соответствующий
 
 Console.Write("Введите число:");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int n = Convert.ToString(num).Length;
+int n = 0, i=num;
+while (i>=1) {n++; i/=10;}
+
 int[] digit = new int[n];
 
-int i;
 for (i=0; i<n; i++, num/=10) digit[i]=num%10;
 for (i=0; i<n/2; i++) 
   if (digit[i]!=digit[n-1-i]) break; 
