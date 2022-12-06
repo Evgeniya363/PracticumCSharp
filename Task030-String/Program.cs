@@ -11,3 +11,7 @@ foreach (int var in arr)
   Console.Write($"{var}  ");
 }
 int[] num1 = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+foreach (int var in num1)
+{
+  Console.Write($"{var}  ");
+}
