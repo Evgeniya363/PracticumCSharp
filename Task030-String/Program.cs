@@ -1,4 +1,4 @@
-﻿string str = "Светок, Боб, Жека, Игорёха, Танюхен.";
+﻿string str = "Светок, Боб, Жека, Игорёха, Танюхен. Толян";
 string str2 = "1, 2, 5, 7";
 string[] nums = str2.Split(new char[]{' ',',','.'}, System.StringSplitOptions.RemoveEmptyEntries);
 foreach (var num in nums)
