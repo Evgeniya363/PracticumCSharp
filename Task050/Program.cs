@@ -55,7 +55,7 @@ string Search(int[,] array, int indexI, int indexJ)
   if ( indexI >= 0 
      & indexI < array.GetLength(0) 
      & indexJ >= 0 
-     & indexI < array.GetLength(1))
+     & indexJ < array.GetLength(1))
   {
     return ($"Искомый элемент равен {array[indexI, indexJ]}");
   } 
